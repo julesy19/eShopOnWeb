@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'dotnet build eShopOnWeb.sln'
+        sh 'export PATH=$PATH:/root/.dotnet && dotnet build eShopOnWeb.sln'
       }
     }
 
